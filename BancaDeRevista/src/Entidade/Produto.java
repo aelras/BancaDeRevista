@@ -47,5 +47,12 @@ public class Produto {
 		estoque = estoque + quantidade;
 	}
 	
-	
+	public void tirarEstoque(int quantidade) {
+		
+		if (quantidade <= estoque) {
+			estoque = estoque -quantidade;
+		}else {
+			System.out.println("Estoque indisponível!");
+		}
+	}
 }
